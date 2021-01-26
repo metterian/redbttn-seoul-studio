@@ -1,0 +1,1258 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+
+    <!--- basic page needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <title>redbttn</title>
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- mobile specific metas
+    ================================================== -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSS
+    ================================================== -->
+    <link rel="stylesheet" href='{% static "css/base.css" %}'>
+    <link rel="stylesheet" href='{% static "css/vendor.css" %}'>
+    <link rel="stylesheet" href='{% static "css/main.css" %} '>
+    <!-- user customed CSS-->
+    <link rel="stylesheet" href='{% static "css/floating-button/floating.css" %} '>
+    <link rel="stylesheet" href='{% static "css/floating-button/normalize.min.css" %} '>
+    <link href="//db.onlinewebfonts.com/c/0754c79591548fdd9fb8078c683ca5ba?family=Futura" rel="stylesheet" type="text/css"/>
+    <link href="https://unpkg.com/video.js/dist/video-js.css" rel="stylesheet">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css"> <!-- XEICON Icons-->
+
+    <!-- script
+    ================================================== -->
+    <script src='{% static "js/modernizr.js" %}'></script>
+    <script src='{% static "js/pace.min.js" %}'></script>
+    <script src="https://unpkg.com/video.js/dist/video.js"></script>
+    <script src="https://unpkg.com/videojs-flash/dist/videojs-flash.js"></script>
+    <script src="https://unpkg.com/videojs-contrib-hls/dist/videojs-contrib-hls.js"></script>
+
+    <!-- favicons
+    ================================================== -->
+    <link rel="shortcut icon" href='{% static "favicon.png" %}' type="image/x-icon">
+    <link rel="icon" href='{% static "favicon.png" %}' type="image/x-icon">
+
+</head>
+
+
+<body id="top">
+    
+    <!-- preloader
+    ================================================== -->
+    <div id="preloader">
+        <div id="loader" class="dots-jump">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+
+
+    <!-- header
+    ================================================== -->
+    <header class="s-header">
+
+        <div class="row">
+
+            <div class="header-logo">
+                <a class="site-logo" href="#home"><img src="/static/images/logo.svg" alt="Homepage"></a>
+            </div>
+            
+            <nav class="header-nav-wrap">
+                <ul class="header-nav">
+                    <li class="current"><a class="smoothscroll"  href="#home" title="home">Home</a></li>
+                    <li><a class="smoothscroll"  href="#about" title="about">About</a></li>
+                    <li><a class="smoothscroll"  href="#services" title="services">Price</a></li>
+                    <li><a class="smoothscroll"  href="#works" title="works">Works</a></li>
+                    <li><a class="smoothscroll"  href="#contact" title="contact">Reservation</a></li>
+                </ul>
+            </nav> <!-- end header-nav-wrap -->
+            
+            <a class="header-menu-toggle" href="#0">
+                <span class="header-menu-icon"></span>
+            </a>
+
+        </div> <!-- end row -->
+
+    </header> <!-- end s-header -->
+    
+
+    <div class="fabc" >
+              <div class="option reply" OnClick="window.open('http://bit.ly/_redbttn_reservation') "><i class="xi-kakaotalk"></i></div>
+              <div class="option love" OnClick="window.open('https://www.instagram.com/redbttnseoul/') "><i class="fab fa-instagram"></i></div>
+              <div class="option delete" OnClick="location.href ='sms: 010-9107-5153&body=레드버튼 예약문의 입니다. \n \n\n                    성함 / 연락처 / 날짜 / 인원                   (위 내용을 보내주시면 예약 안내해드겠습니다.)'"><i class="fas fa-sms"></i></div>
+              <div class="close"><i class="fas fa-times"></i></div>
+            </div>
+
+    <!-- home
+    ================================================== -->
+    <!--<section id="home" class="s-home page-hero target-section" data-parallax="scroll" data-image-src="static/images/first-paper.jpg" data-natural-width=3000 data-natural-height=2000 data-position-y=center>
+    -->
+     <section id="home" class="s-home page-hero target-section" data-parallax="scroll" >
+
+        <!--<div class="shadow-overlay"></div> -->
+
+        <div class="home-content">
+
+            <div class="row home-content__main">
+
+                <h1>
+                Time flows <br>
+                light flashes <br>
+                </h1>
+
+                <video autoplay loop muted playsinline preload="auto" id="redbttn-video"  class="video-js vjs-default-skin vjs-16-9"  >
+                      <source
+                         src="https://hlsforredbttn.s3.ap-northeast-2.amazonaws.com/001/output.m3u8"
+                         type="application/x-mpegURL">
+                </video>
+
+                <script >
+                  (function(window, videojs) {
+                    var player = window.player = videojs('redbttn-video');
+
+                    // hook up the video switcher
+                    var loadUrl = document.getElementById('load-url');
+                    var url = document.getElementById('url');
+                    loadUrl.addEventListener('submit', function(event) {
+                      event.preventDefault();
+                      player.src({
+                        src: url.value,
+                        type: 'application/x-mpegURL'
+                      });
+                      return false;
+                    });
+                  }(window, window.videojs));
+
+                </script>
+
+
+
+                <div class="home-content__button">
+                    <a href="#about" class="smoothscroll btn btn-animatedbg">
+                        More About Us
+                    </a>
+                </div>
+
+            </div> <!-- end home-content__main -->
+            <!--
+            <div class="home-content__scroll">
+                <a href="#about" class="scroll-link smoothscroll">
+                    Scroll
+                </a>
+            </div>
+
+            -->
+
+        </div> <!-- end home-content -->
+
+        <ul class="home-social">
+            <li>
+                <a href="http://bit.ly/_redbttn_reservation"><i class="fas fa-comment" aria-hidden="true"></i><span>KakaoTalk</span></a>
+            </li>
+            <li>
+                <a href="https://www.instagram.com/redbttnseoul/"><i class="fab fa-instagram" aria-hidden="true"></i><span>Instagram</span></a>
+            </li>
+            <li>
+                <a href="sms: 010-9402-0676"><i class="fas fa-sms" aria-hidden="true"></i><span>SMS</span></a>
+            </li>
+
+        </ul> <!-- end home-social -->
+
+    </section> <!-- end s-home -->
+
+
+    <!-- about
+    ================================================== -->
+    <section id="about" class="s-about target-section">
+
+        <div class="row section-header" data-aos="fade-up">
+            <div class="col-full">
+                <h3 data-num="01" class="subhead">We Are</h3>
+                <h1 class="display-1">
+                    레드버튼은 셀프 영상 스튜디오입니다. <br>
+                    스스로 감독이 되어 액션과 컷! 버튼를 눌러서 셀프로 촬영하시면, 아날로그 감각의 영상을 만들어드립니다.
+                </h1>
+                <p class="lead">
+                    어떤 계기나 기회가 아니더라도 나 혼자 그대로의 평범한 모습, 좋아하는 사람을 더 좋아하기 위해, 우연히 만나 커플룩인 걸 알아차렸을 때, 소중한 사람과의 사소한 순간. 찰칵 찰칵 10분의 촬영으로 그 순간들을 영상으로 기록할 수 있다면 레드버튼을 한번 눌러 보는 건 어떨까요?
+                </p>
+            </div>
+        </div>
+
+        <div class="row about-process block-1-2 block-tab-full">
+
+            <div class="col-block item-process" data-aos="fade-up">
+                <div class="item-process__header item-process__header--planning">
+                    <h3>redbttn studio</h3>
+                </div>
+                <p>
+                    레드버튼 스튜디오는 신사동 가로수길과 신사역 8번 출구 사이에 위치해 있습니다.
+                    아날로그 감각의 영감을 얻은 셀프 영상 촬영을 기본으로 활동을 전개해 나가고 있습니다.
+                    셀프와 영상 그리고 아날로그 키워드를 포괄하는 독보적인 하나의 장르가 되고자 합니다.
+                </p>
+            </div>
+            <div class="col-block item-process" data-aos="fade-up">
+                <div class="item-process__header item-process__header--branding">
+                    <h3>셀프영상 self film</h3>
+                </div>
+                <p>
+                    아날로그 카메라를 이용해서 찰칵찰칵 스스로 감독이 되어 영상을 촬영하는 콘셉트는 사진을 찍는 것처럼 쉽게 영상을 촬영 수 있도록 고민한 결과물입니다.
+                    멈춰있기만 한 장면보다는 즐거움과 자연스러움이 묻어나는 반짝이는 순간들의 연속된 기록을 간직하시길 제안합니다.
+                </p>
+            </div>
+
+            <!--
+            <div class="col-block item-process" data-aos="fade-up">
+                <div class="item-process__header item-process__header--implementation">
+                    <h3>Implementation</h3>
+                </div>
+                <p>
+                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Nulla porttitor accumsan tincidunt. Cras ultricies ligula sed magna dictum porta.
+                </p>
+            </div>
+            <div class="col-block item-process" data-aos="fade-up">
+                <div class="item-process__header item-process__header--documentation">
+                    <h3>Documentation</h3>
+                </div>
+                <p>
+                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec velit neque, auctor sit amet aliquam vel, ullamcorper sit amet ligula. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Nulla porttitor accumsan tincidunt. Cras ultricies ligula sed magna dictum porta.
+                </p>
+
+            </div>
+            -->
+
+        </div>  <!-- end about-process -->
+
+    </section> <!-- end s-about -->
+
+
+    <!-- services
+    ================================================== -->
+    <section id="services" class="s-services target-section">
+
+        <div class="row section-header" data-aos="fade-up">
+            <div class="col-full">
+                <h3 data-num="02" class="subhead">We Do</h3>
+                <h1 class="display-1 display-1--light">
+                    영상 촬영을 위한 레드버튼 패키지 안내입니다.
+                </h1>
+                <p class="lead lead-light">
+                    영상 촬영 하실 수 있는 기본 패키지로 시그니쳐 편집 영상, 시네마그래프 영상, 스틸 사진이 포함되어 있습니다.
+                    레드버튼 스튜디오에서 상담-촬영-리뷰 순서로 진행되며 1시간 정도 소요됩니다.
+                    편집된 영상은 모든 과정을 마치신 후 1시간 내외로 전송해드립니다. (₩70,000)
+                </p>
+            </div>
+        </div>
+
+        <div class="row section-header" data-aos="fade-up">
+            <div class="col-full">
+
+                <p class="redbttn-pkg display-1--light">
+                    redbttn.pkg
+                </p>
+                
+            </div>
+        </div>
+
+
+
+
+
+            
+        <div class="row services-list block-1-3 block-tab-full">
+        {% comment %} <div class="row services-list block-1-3 block-m-1-2 block-tab-full"> {% endcomment %}
+                
+            <div class="col-block item-service" data-aos="fade-up">
+
+                
+                <h4>시그니쳐 편집 영상 1편</h4>
+                <p>
+                직접 선택하신 영상 클립 중 베스트 컷 위주로 편집, 보정된 20초 내외의 시그니쳐 영상입니다. 
+                레드버튼 인스타그램 피드에서 확인해보실 수 있습니다.
+                </p>
+            </div>
+
+            <div class="col-block item-service" data-aos="fade-up">
+                <h4>시네마그래프 영상 1편 (아이폰라이브포토)</h4>
+                <p>
+                특정한 움직임이 짧게 반복되는 영상입니다.
+                직접 골라 주신 장면으로 제작되며 영상 파일과 아이폰 배경화면 설정이 가능한 라이브 포토로 함께 제공됩니다.
+                </p>
+            </div>
+
+            <div class="col-block item-service" data-aos="fade-up">
+                <h4>스틸 사진</h4>
+                <p>
+                영상의 한 장면을 고화질로 추출하여, 보정 후에 사진 파일의 형태로 함께 보내드립니다.
+                </p>
+                
+            </div>
+
+            <div class="col-block plus-service" data-aos="fade-up">
+
+                <h4>A cut long clips</h4>
+                <p>
+                시그니처 편집 영상의 긴버전 영상입니다.
+                선택 갯수와 시간에 제한 없이 골라주신 장면들을 2-3분 정도의 편집영상으로 만들어 드립니다. (₩30,000)
+                </p>
+            </div>
+
+            <div class="col-block plus-service" data-aos="fade-up">
+                <h4>인원추가 1인 </h4>
+                <p>
+                인원추가에 따라 촬영 시간과 영상 분량 비례하여 늘어나게 됩니다. 최대 5명까지 촬영을 권장하고 있습니다. (₩30,000)
+                </p>
+            </div>
+
+            <div class="col-block plus-service" data-aos="fade-up">
+                <h4>시네마그래프 영상 + 스틸 사진 추가</h4>
+                <p>
+                배경화면 설정하실 수 있는 라이브 포토와 스틸사진은 추가로 각각 1장씩 받아 보실 수 있으며, 라이브 2장 혹은 스틸사진 2장으로 받아 보실 수도 있습니다. (₩10,000)
+                </p>
+                
+
+            </div>
+
+            <div class="col-block plus-service" data-aos="fade-up">
+                <h4>전체 원본 영상</h4>
+                <p>
+                전체 원본 영상은 별도로 문의 부탁드리겠습니다.
+                </p>
+
+            </div>
+
+        </div> <!-- end services-list -->
+
+    </section> <!-- end s-services -->
+
+
+    <!-- works
+    ================================================== -->
+    <section id="works" class="s-works target-section">
+
+        <div class="row section-header" data-aos="fade-up">
+            <div class="col-full">
+                <h3 data-num="03" class="subhead">We - Work</h3>
+                {% comment %} <h1 class="display-1">
+                안녕하세요 셀프 영상 스튜디오 레드버튼 입니다.
+                </h1> {% endcomment %}
+            </div>
+        </div>
+
+        <!--<div class="portfolio block-1-3 block-m-1-3">-->
+        <!--<div class="portfolio block-1-4 block-m-1-3 block-tab-1-2 collapse">-->
+        <section class = "post-list">
+            <div class="col-block item-folio" data-aos="fade-up">
+
+                <div class="item-folio__thumb">
+                    <a href="{{photo1.link}}" class="thumb-link" title="instagram Link" data-size="1050x700">
+                        <img src="{{ photo.preview_photo }}"
+                             srcset="{{ photo1.preview_photo }} 1x, {{ photo1.preview_photo }} 2x" alt="">
+                    </a>
+                </div>
+
+                <div class="item-folio__text">
+                    <h3 class="item-folio__title">
+                        @redbttnseoul
+                    </h3>
+                    <p class="item-folio__cat">
+                        {{ photo1.content }}
+                    </p>
+                </div>
+
+                <a href="{{ photo1.link }}" class="item-folio__project-link" title="Instagram Link">
+                    instagram Link
+                </a>
+
+                <div class="item-folio__caption">
+                    <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
+                </div>
+
+            </div> <!-- end item-folio -->
+
+            <div class="col-block item-folio" data-aos="fade-up">
+
+                <div class="item-folio__thumb">
+                    <a href="{{ photo2.link }}" class="thumb-link" title="Instagram Link" data-size="1050x700">
+                        <img src="static/images/portfolio/fuji.jpg"
+                             srcset="{{ photo2.preview_photo }} 1x, {{ photo2.preview_photo }} 2x" alt="">
+                    </a>
+                </div>
+
+                <div class="item-folio__text">
+                    <h3 class="item-folio__title">
+                        @redbttnseoul
+                    </h3>
+                    <p class="item-folio__cat">
+                        {{photo2.content}}
+                    </p>
+                </div>
+
+                <a href="{{ photo2.link}}" class="item-folio__project-link" title="Instagram Link">
+                    instagram Link
+                </a>
+
+                <div class="item-folio__caption">
+                    <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
+                </div>
+
+            </div> <!-- end item-folio -->
+
+            <div class="col-block item-folio" data-aos="fade-up">
+
+                <div class="item-folio__thumb">
+                    <a href="{{ photo3.link }}" class="thumb-link" title="instagram Link" data-size="1050x700">
+                        <img src="static/images/portfolio/woodcraft.jpg"
+                             srcset="{{ photo3.preview_photo }} 1x, {{ photo3.preview_photo }} 2x" alt="">
+                    </a>
+                </div>
+
+                <div class="item-folio__text">
+                    <h3 class="item-folio__title">
+                        @redbttnseoul
+                    </h3>
+                    <p class="item-folio__cat">
+                        {{photo3.content}}
+                    </p>
+                </div>
+
+                <a href="" class="item-folio__project-link" title="Instagram Link">
+                    instagram Link
+                </a>
+
+                <div class="item-folio__caption">
+                    <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
+                </div>
+
+            </div> <!-- end item-folio -->
+
+            <div class="col-block item-folio" data-aos="fade-up">
+
+                <div class="item-folio__thumb">
+                    <a href="{{photo4.link}}" class="thumb-link" title="instagram Link" data-size="1050x700">
+                        <img src="static/images/portfolio/droplet.jpg"
+                             srcset="{{ photo4.preview_photo }} 1x, {{ photo4.preview_photo }} 2x" alt="">
+                    </a>
+                </div>
+
+                <div class="item-folio__text">
+                    <h3 class="item-folio__title">
+                        @redbttnseoul
+                    </h3>
+                    <p class="item-folio__cat">
+                        {{ photo4.content }}
+                    </p>
+                </div>
+
+                <a href="{{ photo4.link }}" class="item-folio__project-link" title="Instagram Link">
+                    instagram Link
+                </a>
+
+                <div class="item-folio__caption">
+                    <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
+                </div>
+
+            </div> <!-- end item-folio -->
+
+            <div class="col-block item-folio" data-aos="fade-up">
+
+                <div class="item-folio__thumb">
+                    <a href="{{photo5.link}}" class="thumb-link" title="instagram Link" data-size="1050x700">
+                        <img src="static/images/portfolio/shutterbug.jpg"
+                             srcset="{{ photo5.preview_photo }} 1x, {{ photo5.preview_photo }} 2x" alt="">
+                    </a>
+                </div>
+
+                <div class="item-folio__text">
+                    <h3 class="item-folio__title">
+                        @redbttnseoul
+                    </h3>
+                    <p class="item-folio__cat">
+                        {{ photo5.content }}
+                    </p>
+                </div>
+
+                <a href="{{ photo5.link }}" class="item-folio__project-link" title="Instagram Link">
+                    instagram Link
+                </a>
+
+                <div class="item-folio__caption">
+                    <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
+                </div>
+
+            </div> <!-- end item-folio -->
+
+            <div class="col-block item-folio" data-aos="fade-up">
+
+                <div class="item-folio__thumb">
+                    <a href="{{ photo6.link }}" class="thumb-link" title="instagram Link" data-size="1050x700">
+                        <img src="static/images/portfolio/minimalismo.jpg"
+                             srcset="{{ photo6.preview_photo }} 1x, {{ photo6.preview_photo }} 2x" alt="">
+                    </a>
+                </div>
+
+                <div class="item-folio__text">
+                    <h3 class="item-folio__title">
+                        @redbttnseoul
+                    </h3>
+                    <p class="item-folio__cat">
+                        {{ photo6.content }}
+                    </p>
+                </div>
+
+                <a href="{{ photo6.link }}" class="item-folio__project-link" title="Instagram Link">
+                    instagram Link
+                </a>
+
+                <div class="item-folio__caption">
+                    <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
+                </div>
+
+            </div> <!-- end item-folio -->
+
+            <div class="col-block item-folio" data-aos="fade-up">
+
+                <div class="item-folio__thumb">
+                    <a href="{{ photo7.link }}" class="thumb-link" title="instagram Link" data-size="1050x700">
+                        <img src="static/images/portfolio/film.jpg"
+                             srcset="{{ photo7.preview_photo }}  1x, {{ photo7.preview_photo }} 2x" alt="">
+                    </a>
+                </div>
+
+                <div class="item-folio__text">
+                    <h3 class="item-folio__title">
+                        @redbttnseoul
+                    </h3>
+                    <p class="item-folio__cat">
+                        {{ photo7.content }}
+                    </p>
+                </div>
+
+                <a href="{{ photo7.link }}" class="item-folio__project-link" title="Instagram Link">
+                    instagram Link
+                </a>
+
+                <div class="item-folio__caption">
+                    <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
+                </div>
+
+            </div> <!-- end item-folio -->
+
+            <div class="col-block item-folio" data-aos="fade-up">
+
+                <div class="item-folio__thumb">
+                    <a href="{{ photo8.link }}" class="thumb-link" title="instagram Link" data-size="1050x700">
+                        <img src="static/images/insta/redbttn_insta.jpg"
+                             srcset="{{ photo8.preview_photo }} 1x, {{ photo8.preview_photo }} 2x" alt="">
+                    </a>
+                </div>
+
+                <div class="item-folio__text">
+                    <h3 class="item-folio__title">
+                        @redbttnseoul
+                    </h3>
+                    <p class="item-folio__cat">
+                        {{ photo8.content }}
+                    </p>
+                </div>
+
+                <a href="{{ photo8.link }}" class="item-folio__project-link" title="Instagram Link">
+                    instagram Link
+                </a>
+
+                <div class="item-folio__caption">
+                    <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
+                </div>
+
+            </div> <!-- end item-folio -->
+
+                        <div class="col-block item-folio" data-aos="fade-up">
+
+                <div class="item-folio__thumb">
+                    <a href="{{ photo9.link }}" class="thumb-link" title="instagram Link" data-size="1050x700">
+                        <img src="static/images/portfolio/skaterboy.jpg"
+                             srcset="{{ photo9.preview_photo }} 1x, {{ photo9.preview_photo }} 2x" alt="">
+                    </a>
+                </div>
+
+                <div class="item-folio__text">
+                    <h3 class="item-folio__title">
+                        @redbttnseoul
+                    </h3>
+                    <p class="item-folio__cat">
+                        {{ photo9.content }}
+                    </p>
+                </div>
+
+                <a href="{{ photo9.link }}" class="item-folio__project-link" title="Instagram Link">
+                    instagram Link
+                </a>
+
+                <div class="item-folio__caption">
+                    <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
+                </div>
+
+            </div> <!-- end item-folio -->
+
+            <div class="col-block item-folio" data-aos="fade-up">
+
+                <div class="item-folio__thumb">
+                    <a href="https://www.instagram.com/p/Bsm7XYnF8iH/?utm_source=ig_web_copy_link" class="thumb-link" title="instagram Link" data-size="1050x700">
+                        <img src="static/images/portfolio/skaterboy.jpg"
+                             srcset="static/images/insta/grid_1.jpg ">
+                    </a>
+                </div>
+
+                <div class="item-folio__text">
+                    <h3 class="item-folio__title">
+                        @redbttnseoul
+                    </h3>
+                    <p class="item-folio__cat">
+                        아야나님과 재승님이 레드버튼과 함께 해주셨습니다. 서로 배려해주는 모습이 인상 깊었던 두 분이셨습니다. <br>
+                        예쁜 사랑하세요❤️<br>
+                        @aa_2.8 @and.or.but
+                    </p>
+                </div>
+
+                <a href="https://www.instagram.com/p/Bsm7XYnF8iH/?utm_source=ig_web_copy_link" class="item-folio__project-link" title="Instagram Link">
+                    instagram Link
+                </a>
+
+                <div class="item-folio__caption">
+                    <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
+                </div>
+
+            </div> <!-- end item-folio -->
+
+            <div class="col-block item-folio" data-aos="fade-up">
+
+                <div class="item-folio__thumb">
+                    <a href="https://www.instagram.com/p/BtDikoglpyY/?utm_source=ig_web_copy_link" class="thumb-link" title="instagram Link" data-size="1050x700">
+                        <img src="static/images/insta/grid_2.jpg"
+                             srcset="static/images/insta/grid_2.jpg" alt="">
+                    </a>
+                </div>
+
+                <div class="item-folio__text">
+                    <h3 class="item-folio__title">
+                        @redbttnseoul
+                    </h3>
+                    <p class="item-folio__cat">
+                        끝까지 보세요 츄하트💜
+                        촬영 내내 웃음이 끊이지 않으셨던 보원님과 예은님! 다음에 또 방문해주세요 🙌 <br>
+                        두 분께서 레드버튼과 함께 해주셨습니다. <br>
+                        @gyexlu @yeexeun
+                    </p>
+                </div>
+
+                <a href="https://www.instagram.com/p/BtDikoglpyY/?utm_source=ig_web_copy_link" class="item-folio__project-link" title="Instagram Link">
+                    instagram Link
+                </a>
+
+                <div class="item-folio__caption">
+                    <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
+                </div>
+
+            </div> <!-- end item-folio -->
+
+            <div class="col-block item-folio" data-aos="fade-up">
+
+                <div class="item-folio__thumb">
+                    <a href="https://www.instagram.com/p/BwMP2yljRe3/?utm_source=ig_web_copy_link" class="thumb-link" title="instagram Link" data-size="1050x700">
+                        <img src="static/images/insta/redbttn_insta03.jpg" srcset="static/images/insta/redbttn_insta03.jpg" alt="">
+                    </a>
+                </div>
+
+                <div class="item-folio__text">
+                    <h3 class="item-folio__title">
+                        @redbttnseoul
+                    </h3>
+                    <p class="item-folio__cat">
+                        조금 어색하면 어때요<br>
+                        그런 떨림도 잊히질 않을 기억으로 간직될 거예요🎞 <br>
+                        돌아오지 않는 이 순간을 영상으로 아카이브 하세요🎥
+                    </p>
+                </div>
+
+                <a href="https://www.instagram.com/p/BwMP2yljRe3/?utm_source=ig_web_copy_link" class="item-folio__project-link" title="Instagram Link">
+                    instagram Link
+                </a>
+
+                <div class="item-folio__caption">
+                    <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
+                </div>
+
+            </div> <!-- end item-folio -->
+
+            <div class="col-block item-folio" data-aos="fade-up">
+
+                <div class="item-folio__thumb">
+                    <a href="https://www.instagram.com/p/BwMQEDDD-9J/?utm_source=ig_web_copy_link" class="thumb-link" title="instagram Link" data-size="1050x700">
+                        <img src="static/images/insta/redbttn_insta04.jpg"
+                             >
+                    </a>
+                </div>
+
+                <div class="item-folio__text">
+                    <h3 class="item-folio__title">
+                        @redbttnseoul
+                    </h3>
+                    <p class="item-folio__cat">
+                        자유롭게 움직여보세요💃<br>
+                        이 모든건 추억이 될거잖아요🎞<br>
+                        안젤리나 다닐로바님의 레드버튼 A cut long clips 입니다.<br>
+                        @angelinadanilova
+                    </p>
+                </div>
+
+                <a href="https://www.instagram.com/p/BwMQEDDD-9J/?utm_source=ig_web_copy_link" class="item-folio__project-link" title="Instagram Link">
+                    instagram Link
+                </a>
+
+                <div class="item-folio__caption">
+                    <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
+                </div>
+
+            </div> <!-- end item-folio -->
+
+            <div class="col-block item-folio" data-aos="fade-up">
+
+                <div class="item-folio__thumb">
+                    <a href="https://www.instagram.com/p/BwMP9v0DMC3/?utm_source=ig_web_copy_link" class="thumb-link" title="instagram Link" data-size="1050x700">
+                        <img src="static/images/insta/redbttn_insta05.jpg"
+                             >
+                    </a>
+                </div>
+
+                <div class="item-folio__text">
+                    <h3 class="item-folio__title">
+                        @redbttnseoul
+                    </h3>
+                    <p class="item-folio__cat">
+                        리듬에 몸을 맡겨보세요🎧 <br>
+                        그저 마음이 가는대로, 온전한 나의 모습을 기록해보는거에요🕺<br>
+                        모델 김성찬님의 레드버튼 A cut long clips 입니다.<br>
+                        @kimsungchanofficial
+                    </p>
+                </div>
+
+                <a href="https://www.instagram.com/p/BwMP9v0DMC3/?utm_source=ig_web_copy_link" class="item-folio__project-link" title="Instagram Link">
+                    instagram Link
+                </a>
+
+                <div class="item-folio__caption">
+                    <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
+                </div>
+
+            </div> <!-- end item-folio -->
+
+            <div class="col-block item-folio" data-aos="fade-up">
+
+                <div class="item-folio__thumb">
+                    <a href="https://www.instagram.com/p/BxRtzQijlFU/?utm_source=ig_web_copy_link" class="thumb-link" title="instagram Link" data-size="1050x700">
+                        <img src="static/images/insta/redbttn_insta06.jpg"
+                             >
+                    </a>
+                </div>
+
+                <div class="item-folio__text">
+                    <h3 class="item-folio__title">
+                        @redbttnseoul
+                    </h3>
+                    <p class="item-folio__cat">
+                        소중한 사람과 함께인데 조금 어색하면 어때요👬<br>
+                        그 어색함도 다시 오지 않을 설렘인걸요🙊<br>
+                        🇸🇬국제커플🇰🇷 유튜버 욱&다니엘님과 부미님께서 레드버튼과 함께 해주셨습니다.
+                    </p>
+                </div>
+
+                <a href="https://www.instagram.com/p/BxRtzQijlFU/?utm_source=ig_web_copy_link" class="item-folio__project-link" title="Instagram Link">
+                    instagram Link
+                </a>
+
+                <div class="item-folio__caption">
+                    <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
+                </div>
+
+            </div> <!-- end item-folio -->
+
+            <div class="col-block item-folio" data-aos="fade-up">
+
+                <div class="item-folio__thumb">
+                    <a href="https://www.instagram.com/p/BxjuVSRBKGg/?utm_source=ig_web_copy_link" class="thumb-link" title="instagram Link" data-size="1050x700">
+                        <img src="static/images/insta/redbttn_insta07.jpg"
+                             >
+                    </a>
+                </div>
+
+                <div class="item-folio__text">
+                    <h3 class="item-folio__title">
+                        @redbttnseoul
+                    </h3>
+                    <p class="item-folio__cat">
+                        저, 오늘 생일이에요! 🎂 <br>
+                        많은 친구들의 환호와 축하에 익숙해진 분들이라면, 가장 가까운 사람 함께 케이크만 들고 레드버튼으로 오세요.
+                        케이크 세레모니 컷 추가 촬영을 선물로 드릴게요🎟
+
+                    </p>
+                </div>
+
+                <a href="https://www.instagram.com/p/BxjuVSRBKGg/?utm_source=ig_web_copy_link" class="item-folio__project-link" title="Instagram Link">
+                    instagram Link
+                </a>
+
+                <div class="item-folio__caption">
+                    <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
+                </div>
+
+            </div> <!-- end item-folio -->
+
+            <div class="col-block item-folio" data-aos="fade-up">
+
+                <div class="item-folio__thumb">
+                    <a href="https://www.instagram.com/p/Bx9tGGvgDUf/?utm_source=ig_web_copy_link" class="thumb-link" title="instagram Link" data-size="1050x700">
+                        <img src="static/images/insta/redbttn_insta08.jpg"
+                             >
+                    </a>
+                </div>
+
+                <div class="item-folio__text">
+                    <h3 class="item-folio__title">
+                        @redbttnseoul
+                    </h3>
+                    <p class="item-folio__cat">
+                        레드버튼과 함께하는 원데이 모델 클래스 
+                        이번주 토요일 YG KPLUS 1일 모델 체험의 스페셜 멘토 모델 강희님께서 레드버튼 셀프 영상 촬영을 하셨습니다📽<br>
+                        레드버튼의 셀프 영상으로 미리 만나보세요🙌
+                    </p>
+                </div>
+
+                <a href="https://www.instagram.com/p/Bx9tGGvgDUf/?utm_source=ig_web_copy_link" class="item-folio__project-link" title="Instagram Link">
+                    instagram Link
+                </a>
+
+                <div class="item-folio__caption">
+                    <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
+                </div>
+
+            </div> <!-- end item-folio -->
+
+            <div class="col-block item-folio" data-aos="fade-up">
+
+                <div class="item-folio__thumb">
+                    <a href="https://www.instagram.com/p/Bx2HBk6A5Ub/?utm_source=ig_web_copy_link" class="thumb-link" title="instagram Link" data-size="1050x700">
+                        <img src="static/images/insta/redbttn_insta09.jpg"
+                             >
+                    </a>
+                </div>
+
+                <div class="item-folio__text">
+                    <h3 class="item-folio__title">
+                        @redbttnseoul
+                    </h3>
+                    <p class="item-folio__cat">
+                        플하지만 기억에 남는 스타일링🚶<br>
+                        요즘 같은 날씨에 화려하게 차려입기보다는 심플하게 표현해보는 건 어떨까요?<br>
+                        가벼운 스타일링에 가장 자연스러운 포즈로 찍다 보면 기분이 좋아지거든요🙌
+                    </p>
+                </div>
+
+                <a href="https://www.instagram.com/p/Bx2HBk6A5Ub/?utm_source=ig_web_copy_link" class="item-folio__project-link" title="Instagram Link">
+                    instagram Link
+                </a>
+
+                <div class="item-folio__caption">
+                    <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
+                </div>
+
+            </div> <!-- end item-folio -->
+
+            <div class="col-block item-folio" data-aos="fade-up">
+
+                <div class="item-folio__thumb">
+                    <a href="https://www.instagram.com/p/Bwl7zN2jZXq/?utm_source=ig_web_options_share_sheet" class="thumb-link" title="instagram Link" data-size="1050x700">
+                        <img src="static/images/insta/redbttn_insta10.jpg"
+                             >
+                    </a>
+                </div>
+
+                <div class="item-folio__text">
+                    <h3 class="item-folio__title">
+                        @redbttnseoul
+                    </h3>
+                    <p class="item-folio__cat">
+                        레드버튼입니다. DM과 카카오톡으로 궁금하신 점 편하게 문의해주시면 언제든 답변 도와드리고 있습니다.<br>
+                        그중에 많이 문의 주시는 내용응 쉽게 보실 수 있도록 정리하여 올려드립니다.
+                    </p>
+                </div>
+
+                <a href="https://www.instagram.com/p/Bwl7zN2jZXq/?utm_source=ig_web_options_share_sheet" class="item-folio__project-link" title="Instagram Link">
+                    instagram Link
+                </a>
+
+                <div class="item-folio__caption">
+                    <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
+                </div>
+
+            </div> <!-- end item-folio -->
+
+            <div class="col-block item-folio" data-aos="fade-up">
+
+                <div class="item-folio__thumb">
+                    <a href="https://www.instagram.com/p/Bs8FIcKFBiv/?utm_source=ig_web_copy_link" class="thumb-link" title="instagram Link" data-size="1050x700">
+                        <img src="static/images/insta/redbttn_insta11.jpg"
+                             >
+                    </a>
+                </div>
+
+                <div class="item-folio__text">
+                    <h3 class="item-folio__title">
+                        @redbttnseoul
+                    </h3>
+                    <p class="item-folio__cat">
+                        끝까지 보세요 뒷장도 있답니다🙏<br>
+                        레드버튼은 스스로 감독이 되어 촬영할 수 있는 셀프영상스튜디오입니다. 누구도 개입하지 않는 공간에서 자연스러운 모습을 영상으로 기록할 수 있는 경험을 제공합니다.
+                    </p>
+                </div>
+
+                <a href="https://www.instagram.com/p/Bs8FIcKFBiv/?utm_source=ig_web_copy_link" class="item-folio__project-link" title="Instagram Link">
+                    instagram Link
+                </a>
+
+                <div class="item-folio__caption">
+                    <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
+                </div>
+
+            </div> <!-- end item-folio -->
+
+            <div class="col-block item-folio" data-aos="fade-up">
+
+                <div class="item-folio__thumb">
+                    <a href="https://www.instagram.com/p/BwZDlkAjNCV/?utm_source=ig_web_copy_link" class="thumb-link" title="instagram Link" data-size="1050x700">
+                        <img src="static/images/insta/redbttn_insta12.jpg"
+                             >
+                    </a>
+                </div>
+
+                <div class="item-folio__text">
+                    <h3 class="item-folio__title">
+                        @redbttnseoul
+                    </h3>
+                    <p class="item-folio__cat">
+                        레드버튼은 셀프 영상 스튜디오입니다🎥<br>
+                        독립된 공간에서 자유로운 모습을 누구의 간섭 없이 셀프 영상으로 기록할 수 있습니다🎞
+
+                    </p>
+                </div>
+
+                <a href="https://www.instagram.com/p/BwZDlkAjNCV/?utm_source=ig_web_copy_link" class="item-folio__project-link" title="Instagram Link">
+                    instagram Link
+                </a>
+
+                <div class="item-folio__caption">
+                    <p>Vero molestiae sed aut natus excepturi. Et tempora numquam. Temporibus iusto quo.Unde dolorem corrupti neque nisi.</p>
+                </div>
+
+            </div> <!-- end item-folio -->
+
+
+
+
+
+        
+        </section>
+        <!--
+        </div> -->
+
+        <div class="testimonials-wrap" data-aos="fade-up">
+
+            {% comment %} <div class="row">
+                <div class="col-full testimonials-header">
+                    <h2 class="h1">What Clients Are Saying...</h2>
+                </div>
+            </div> {% endcomment %}
+
+            <div class="row testimonials">
+
+                <div class="col-full testimonials__slider">
+
+                    {% comment %} <div class="testimonials__slide">
+                        <span class="testimonials__icon"></span>
+                        <p>Qui ipsam temporibus quisquam velMaiores eos cumque distinctio nam accusantium ipsum. 
+                        Laudantium quia consequatur molestias delectus culpa facere hic dolores aperiam. Accusantium praesentium corpori.</p>
+                        <div class="testimonials__author">
+                            <img src="static/images/avatars/user-01.jpg" alt="Author image" class="testimonials__avatar">
+                            <span class="testimonials__name">Tim Cook</span>
+                            <span class="testimonials__position">CEO, Apple</span>
+                        </div>
+                    </div> <!-- end testimonials__slide -->
+
+                    <div class="testimonials__slide">
+                        <span class="testimonials__icon"></span>
+                        <p>Excepturi nam cupiditate culpa doloremque deleniti repellat. Veniam quos repellat voluptas animi adipisci.
+                        Nisi eaque consequatur. Quasi voluptas eius distinctio. Atque eos maxime. Qui ipsam temporibus quisquam vel.</p>
+                        <div class="testimonials__author">
+                            <img src="static/images/avatars/user-05.jpg" alt="Author image" class="testimonials__avatar">
+                            <span class="testimonials__name">Sundar Pichai</span>
+                            <span class="testimonials__position">CEO, Google</span>
+                        </div>
+                    </div> <!-- end testimonials__slide -->
+
+                    <div class="testimonials__slide">
+                        <span class="testimonials__icon"></span>
+                        <p>Repellat dignissimos libero. Qui sed at corrupti expedita voluptas odit. Nihil ea quia nesciunt. Ducimus aut sed ipsam.  
+                        Autem eaque officia cum exercitationem sunt voluptatum accusamus. Quasi voluptas eius distinctio.</p>
+                        <div class="testimonials__author">
+                            <img src="static/images/avatars/user-02.jpg" alt="Author image" class="testimonials__avatar">
+                            <span class="testimonials__name">Satya Nadella</span>
+                            <span class="testimonials__position">CEO, Microsoft</span>
+                        </div>
+                    </div> <!-- end testimonials__slide -->
+                    
+                </div> <!-- end testimonials__slider --> {% endcomment %}
+
+            </div> <!-- end testimonials -->
+
+        </div> <!-- end testimonials-wrap -->
+
+    </section> <!-- end s-works -->
+
+
+    <!-- clients
+    ================================================== -->
+    <section id="clients" class="s-clients target-section">
+
+        <div class="row section-header" data-aos="fade-up">
+            <div class="col-full">
+                <h3 data-num="04" class="subhead">Co - Work</h3>
+                <h2 class="display-1 display-1--light">레드버튼의 감각적인 무드와 독창적인 촬영 방식은 항상 눈길을 끌게하는 매력이 있습니다. 다양한 브랜드와 함께 호흡하며 서로의 가치를 공유한 협업을 확인 해보세요</h2>
+            </div>
+        </div>
+
+        <div class="row clients-list block-1-4 block-tab-1-3 block-mob-1-2" data-aos="fade-up">
+
+            <div class="col-block item-client">
+                <a href="http://bit.ly/_redbttn_youtube" target="_blank">
+                    <img src="static/images/clients/icon-youtube.svg" width="200" height="235.98" alt="">
+                </a>
+            </div>
+            <div class="col-block item-client">
+                <a href="https://www.instagram.com/s/aGlnaGxpZ2h0OjE3ODc2Njk1MDc4NDEzNDQy?igshid=1w8qnwknfqi08" target="_blank">
+                    <img src="static/images/clients/icon-YG.svg" alt="">
+                </a>
+            </div>
+            <div class="col-block item-client">
+                <a href="https://www.instagram.com/s/aGlnaGxpZ2h0OjE4MDkwMjQzMjIwMDM4OTQ0?igshid=1k5bwz70ipc6g" target="_blank">
+                    <img src="static/images/clients/icon-casa.svg" alt="">
+                </a>
+            </div>
+            <div class="col-block item-client">
+                <a href="https://www.instagram.com/stories/highlights/18074350579189657/?hl=ko", target="_blank">
+                    <img src="static/images/clients/icon-peach.svg" alt="">
+                </a>
+            </div>
+            <div class="col-block item-client">
+                <a href="https://www.instagram.com/s/aGlnaGxpZ2h0OjE3ODQ4Mjc2NzMyNjkzODcz?igshid=1qrmqnefyv5aq" target="_blank">
+                    <img src="static/images/clients/icon-seoulism.svg" alt="">
+                </a>
+            </div>
+            <div class="col-block item-client">
+                <a href="0#">
+                    <img src="static/images/clients/icon-BLANC.svg" alt="">
+                </a>
+            </div>
+            <div class="col-block item-client">
+                <a href="https://www.instagram.com/s/aGlnaGxpZ2h0OjE3OTAwNjA4NzA4MzgwNjE2?igshid=g9f3i5hqup3l" target="_blank">
+                    <img src="static/images/clients/icon-polo.svg" alt="">
+                </a>
+            </div>
+            <div class="col-block item-client">
+                <a href="https://www.instagram.com/s/aGlnaGxpZ2h0OjE4MDA0NTg4Mjk0MjY3MjM4?igshid=1r5g46v2svdbn" target="_blank">
+                    <img src="static/images/clients/icon-ho.svg" alt="">
+                </a>
+            </div>
+
+        </div> <!-- clients-list -->
+
+    </section> <!-- end s-clients -->
+
+
+    <!-- stats
+    ================================================== -->
+    <!--
+    <section id="stats" class="s-stats">
+
+        <div class="row stats-block block-1-4 block-m-1-2 block-mob-full" data-aos="fade-up">
+                
+            <div class="col-block item-stats ">
+                <div class="item-stats__count">213</div>
+                <h5>Projects Completed</h5>
+            </div>
+            <div class="col-block item-stats">
+                <div class="item-stats__count">179</div>
+                <h5>Happy Clients</h5>
+            </div>
+            <div class="col-block item-stats">
+                <div class="item-stats__count">35</div>
+                <h5>Awards Received</h5>
+            </div>
+            <div class="col-block item-stats">
+                <div class="item-stats__count">2319</div>
+                <h5>Cups of Coffee</h5> 
+            </div>
+
+        </div> end stats -->
+
+    </section> <!-- end s-stats -->
+
+    -->
+
+
+    <!-- contact
+    ================================================== -->
+    <section id="contact" class="s-contact target-section">
+
+        <div class="row section-header" data-aos="fade-up">
+            <div class="col-full">
+                <h3 data-num="05" class="subhead">Just Come On In</h3>
+                <h1 class="display-1 display-1--light">아직 완벽한 순간이 아니라고 생각하세요? 나 그대로의 모습을 좋아하는 사람과 더 좋아하기위해 영상으로 기록해보세요.
+                    준비 되셨다면
+                    <a href="http://bit.ly/_redbttn_reservation" target="_blank">여기를 눌러주세요.</a></h1>
+            </div>
+        </div>
+
+        <div class="row contact-infos">
+
+            <div class="col-five md-seven tab-full contact-address" data-aos="fade-up">
+                <h4>Where to Find Us</h4>
+
+                <p class="display-1--light">
+                    <a href="http://naver.me/GuifGxDb" target="_blank">서울 강남구 신사동 515-3 B1F </a><br>
+                    <a href="https://goo.gl/maps/WSJK9rdd4kp5XsTx5" target="_blank">36 Gangnam-daero 154-gil <br>
+                Gangnam-gu, Seoul <br>
+                        06035 Korea</a>
+                </p>
+            </div>
+
+            <div class="col-three md-five tab-full contact-social" data-aos="fade-up">
+                <h4>Follow Us</h4>
+
+                <ul class="contact-list">
+                    <li><a href="https://www.instagram.com/redbttnseoul/">Instagram</a></li>
+                    <li><a href="bit.ly/_redbttn_reservation">Kakao Plus</a></li>
+
+                </ul>
+            </div>
+
+            <div class="col-four md-six tab-full contact-number" data-aos="fade-up">
+                <h4>Contact Us</h4>
+
+                <ul class="contact-list">
+                    <li><a href="mailto:#0">redbttnseoul@gmail.com</a></li>
+                    <li><a href="tel:+821091075153">+81 10 9107 5153</a></li>
+
+                </ul>
+            </div>
+
+        </div> <!-- end contact-infos -->
+
+        {% comment %} <div class="row contact-bottom">
+            <div class="col-five tab-full contact-button" data-aos="fade-up">
+                <a href="#about" class="smoothscroll btn btn-animatedbttm">
+                    Let's Talk 
+                </a>
+            </div> {% endcomment %}
+            <!--
+            <div class="col-six tab-full contact-subscribe" data-aos="fade-up">
+                <h4>Subscribe</h4>
+
+                <form id="mc-form" class="group mc-form" novalidate="true">
+                    <input type="email" value="" name="EMAIL" class="email" id="mc-email" placeholder="Email Address" required="">
+                    <input type="submit" name="subscribe" value="Subscribe">
+                    <label for="mc-email" class="subscribe-message"></label>
+                </form>
+            </div>
+
+        </div>
+         -->
+        <!-- end contact-button -->
+
+    </section> <!-- end s-contact -->
+
+
+    <!-- footer
+    ================================================== -->
+    <footer>
+        <div class="row">
+            <div class="col-full cl-copyright">
+                <span>
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved 
+
+</span>
+            </div>
+        </div>
+        <!--
+        <div class="cl-go-top">
+            <a class="smoothscroll" title="Back to Top" href="#top"></a>
+        </div>
+        -->
+    </footer>
+
+
+    <!-- photoswipe background
+    ================================================== -->
+    
+    <div aria-hidden="true" class="pswp" role="dialog" tabindex="-1">
+
+        <div class="pswp__bg"></div>
+        <div class="pswp__scroll-wrap">
+
+            <div class="pswp__container">
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+                <div class="pswp__item"></div>
+            </div>
+
+            <div class="pswp__ui pswp__ui--hidden">
+                <div class="pswp__top-bar">
+                    <div class="pswp__counter"></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button> <button class="pswp__button pswp__button--share" title=
+                    "Share"></button> <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button> <button class="pswp__button pswp__button--zoom" title=
+                    "Zoom in/out"></button>
+                    <div class="pswp__preloader">
+                        <div class="pswp__preloader__icn">
+                            <div class="pswp__preloader__cut">
+                                <div class="pswp__preloader__donut"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                    <div class="pswp__share-tooltip"></div>
+                </div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button> <button class="pswp__button pswp__button--arrow--right" title=
+                "Next (arrow right)"></button>
+                <div class="pswp__caption">
+                    <div class="pswp__caption__center"></div>
+                </div>
+            </div>
+
+        </div>
+    
+    </div>
+    
+    <!-- end photoSwipe background -->
+
+
+    <!-- Java Script
+    ================================================== -->
+    <script src="static/js/jquery-3.2.1.min.js"></script>
+    <script src="static/js/plugins.js"></script>
+    <script src="static/js/main.js"></script>
+
+</body>

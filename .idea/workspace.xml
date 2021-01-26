@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="56b93acd-57e5-4d0a-b387-d7337e18596f" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
+    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1Qwk5ePLS4r2bw4A0CMuzIWmlrb" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="ToolWindowDatabase.ShowToolbar" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/templates" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/templates" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/static/images/insta" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.parser">
+    <configuration name="errorhandler" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="redbttn_home" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/venv/lib/python3.7/site-packages/selenium/webdriver/remote" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/venv/lib/python3.7/site-packages/selenium/webdriver/remote/errorhandler.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="instal_crawler" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="redbttn_home" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/instal_crawler.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="parser" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="redbttn_home" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/parser.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="parser" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="redbttn_home" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/parser.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="parser_copy" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="redbttn_home" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/parser_copy.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="redbttn_home" type="Python.DjangoServer" factoryName="Django server">
+      <module name="redbttn_home" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <option name="port" value="8000" />
+      <option name="host" value="" />
+      <option name="additionalOptions" value="" />
+      <option name="browserUrl" value="" />
+      <option name="runTestServer" value="false" />
+      <option name="runNoReload" value="false" />
+      <option name="useCustomRunCommand" value="false" />
+      <option name="customRunCommand" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.parser" />
+        <item itemvalue="Python.instal_crawler" />
+        <item itemvalue="Python.parser_copy" />
+        <item itemvalue="Python.errorhandler" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="56b93acd-57e5-4d0a-b387-d7337e18596f" name="Default Changelist" comment="" />
+      <created>1568688863320</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1568688863320</updated>
+      <workItem from="1568688864547" duration="1949000" />
+      <workItem from="1568698556188" duration="9000" />
+      <workItem from="1568790170210" duration="716000" />
+      <workItem from="1568869393264" duration="3000" />
+      <workItem from="1568885637499" duration="987000" />
+      <workItem from="1569121380509" duration="194000" />
+      <workItem from="1569125153978" duration="708000" />
+      <workItem from="1569125942552" duration="874000" />
+      <workItem from="1569145350081" duration="1000" />
+      <workItem from="1569152535825" duration="4624000" />
+      <workItem from="1569298729463" duration="1227000" />
+      <workItem from="1569486357656" duration="216000" />
+      <workItem from="1569645418020" duration="686000" />
+      <workItem from="1571990230275" duration="1324000" />
+      <workItem from="1572015948526" duration="12000" />
+      <workItem from="1572969863897" duration="80000" />
+      <workItem from="1572970345184" duration="371000" />
+      <workItem from="1578138702034" duration="33000" />
+      <workItem from="1578138773127" duration="2445000" />
+      <workItem from="1578146058652" duration="13000" />
+      <workItem from="1578146113840" duration="5184000" />
+      <workItem from="1578292071882" duration="65000" />
+      <workItem from="1578292151476" duration="3000" />
+      <workItem from="1578373221659" duration="7000" />
+      <workItem from="1578743430830" duration="64000" />
+      <workItem from="1578743578753" duration="825000" />
+      <workItem from="1578744602697" duration="4482000" />
+      <workItem from="1578749431745" duration="1019000" />
+      <workItem from="1579438116866" duration="26000" />
+      <workItem from="1579532305855" duration="3913000" />
+      <workItem from="1580015221224" duration="1476000" />
+      <workItem from="1580117683513" duration="255000" />
+      <workItem from="1580616379429" duration="21000" />
+      <workItem from="1580616500193" duration="96000" />
+      <workItem from="1580895338270" duration="429000" />
+      <workItem from="1582016955563" duration="177000" />
+      <workItem from="1583051135090" duration="433000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="440" y="181" key="#Notifications" timestamp="1578744638147">
+      <screen x="0" y="23" width="1680" height="986" />
+    </state>
+    <state x="440" y="181" key="#Notifications/0.23.1680.986@0.23.1680.986" timestamp="1578744638147" />
+    <state x="441" y="189" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog" timestamp="1578744813471">
+      <screen x="0" y="23" width="1680" height="986" />
+    </state>
+    <state x="441" y="189" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog/0.23.1680.986@0.23.1680.986" timestamp="1578744813471" />
+    <state x="528" y="251" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1580616392375">
+      <screen x="0" y="23" width="1680" height="988" />
+    </state>
+    <state x="528" y="251" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.1680.986@0.23.1680.986" timestamp="1578743618289" />
+    <state x="528" y="251" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.23.1680.988@0.23.1680.988" timestamp="1580616392375" />
+    <state width="1047" height="218" key="GridCell.Tab.0.bottom" timestamp="1580895882669">
+      <screen x="0" y="23" width="1680" height="988" />
+    </state>
+    <state width="1276" height="218" key="GridCell.Tab.0.bottom/0.23.1680.986@0.23.1680.986" timestamp="1580020480745" />
+    <state width="1047" height="218" key="GridCell.Tab.0.bottom/0.23.1680.988@0.23.1680.988" timestamp="1580895882669" />
+    <state width="1047" height="218" key="GridCell.Tab.0.center" timestamp="1580895882668">
+      <screen x="0" y="23" width="1680" height="988" />
+    </state>
+    <state width="1276" height="218" key="GridCell.Tab.0.center/0.23.1680.986@0.23.1680.986" timestamp="1580020480744" />
+    <state width="1047" height="218" key="GridCell.Tab.0.center/0.23.1680.988@0.23.1680.988" timestamp="1580895882668" />
+    <state width="1047" height="218" key="GridCell.Tab.0.left" timestamp="1580895882668">
+      <screen x="0" y="23" width="1680" height="988" />
+    </state>
+    <state width="1276" height="218" key="GridCell.Tab.0.left/0.23.1680.986@0.23.1680.986" timestamp="1580020480744" />
+    <state width="1047" height="218" key="GridCell.Tab.0.left/0.23.1680.988@0.23.1680.988" timestamp="1580895882668" />
+    <state width="1047" height="218" key="GridCell.Tab.0.right" timestamp="1580895882669">
+      <screen x="0" y="23" width="1680" height="988" />
+    </state>
+    <state width="1276" height="218" key="GridCell.Tab.0.right/0.23.1680.986@0.23.1680.986" timestamp="1580020480745" />
+    <state width="1047" height="218" key="GridCell.Tab.0.right/0.23.1680.988@0.23.1680.988" timestamp="1580895882669" />
+    <state width="1358" height="312" key="GridCell.Tab.1.bottom" timestamp="1578979029228">
+      <screen x="0" y="23" width="1680" height="986" />
+    </state>
+    <state width="1358" height="312" key="GridCell.Tab.1.bottom/0.23.1680.986@0.23.1680.986" timestamp="1578979029228" />
+    <state width="1358" height="312" key="GridCell.Tab.1.center" timestamp="1578979029227">
+      <screen x="0" y="23" width="1680" height="986" />
+    </state>
+    <state width="1358" height="312" key="GridCell.Tab.1.center/0.23.1680.986@0.23.1680.986" timestamp="1578979029227" />
+    <state width="1358" height="312" key="GridCell.Tab.1.left" timestamp="1578979029226">
+      <screen x="0" y="23" width="1680" height="986" />
+    </state>
+    <state width="1358" height="312" key="GridCell.Tab.1.left/0.23.1680.986@0.23.1680.986" timestamp="1578979029226" />
+    <state width="1358" height="312" key="GridCell.Tab.1.right" timestamp="1578979029227">
+      <screen x="0" y="23" width="1680" height="986" />
+    </state>
+    <state width="1358" height="312" key="GridCell.Tab.1.right/0.23.1680.986@0.23.1680.986" timestamp="1578979029227" />
+    <state x="349" y="155" key="SettingsEditor" timestamp="1579579563902">
+      <screen x="0" y="23" width="1680" height="986" />
+    </state>
+    <state x="349" y="155" key="SettingsEditor/0.23.1680.986@0.23.1680.986" timestamp="1579579563902" />
+    <state width="831" height="500" key="XDebugger.FullValuePopup" timestamp="1579593201416">
+      <screen x="0" y="23" width="1680" height="986" />
+    </state>
+    <state width="831" height="500" key="XDebugger.FullValuePopup/0.23.1680.986@0.23.1680.986" timestamp="1579593201416" />
+    <state x="505" y="250" width="670" height="676" key="search.everywhere.popup" timestamp="1580117789287">
+      <screen x="0" y="23" width="1680" height="986" />
+    </state>
+    <state x="505" y="250" width="670" height="676" key="search.everywhere.popup/0.23.1680.986@0.23.1680.986" timestamp="1580117789287" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/homepage/views.py</url>
+          <line>18</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/redbttn_home$tests.coverage" NAME="tests Coverage Results" MODIFIED="1569154566943" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/homepage" />
+    <SUITE FILE_PATH="coverage/redbttn_home$parser_copy.coverage" NAME="parser_copy Coverage Results" MODIFIED="1578151205352" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/redbttn_home$parser_copy02.coverage" NAME="parser_copy02 Coverage Results" MODIFIED="1578749443422" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/redbttn_home$instal_crawler.coverage" NAME="instal_crawler Coverage Results" MODIFIED="1579532408100" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/redbttn_home$errorhandler.coverage" NAME="errorhandler Coverage Results" MODIFIED="1578147022482" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/venv/lib/python3.7/site-packages/selenium/webdriver/remote" />
+    <SUITE FILE_PATH="coverage/redbttn_home$parser.coverage" NAME="parser Coverage Results" MODIFIED="1580895393776" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>

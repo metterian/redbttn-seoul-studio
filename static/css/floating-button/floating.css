@@ -1,0 +1,140 @@
+.fabc {
+    z-index: 1;
+    display: flex;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: fixed;
+    background-color: #D5162E;
+    cursor: pointer;
+    transition: 0.3s cubic-bezier(0.41, -0.86, 0.76, 1.89);
+    bottom: 7%;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.12), 0 6px 6px rgba(0, 0, 0, 0.24);
+    transform: translate(-50%, -50%);
+    left: 50%;
+    justify-content: center;
+}
+
+.fabc.open {
+    width: 50px;
+    height: 50px;
+    transition: 0.2s cubic-bezier(0.41, -0.86, 0.76, 1.89);
+}
+
+.fabc .option {
+    width: 6px;
+    height: 6px;
+    overflow: hidden;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: calc(50% - 3px);
+    transition: 0.3s cubic-bezier(0.41, -0.86, 0.76, 1.89);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.fabc .option.reply {
+    left: calc((100% / 3) - 3px);
+}
+
+.fabc .option.love {
+    left: calc(50% - 3px);
+}
+
+.fabc .option.delete {
+    left: calc(((100% / 3) * 2) - 3px);
+}
+
+.fabc .option i {
+    font-size: 25px;
+    color: #fff;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    transition: 0.5s cubic-bezier(0.41, -2, 0.76, 2);
+}
+
+.fabc .option.open {
+    width: 50px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.fabc .option.open.reply {
+    -webkit-transform: translate(-60px, -50px);
+    transform: translate(-60px, -50px);
+}
+
+.fabc .option.open.love {
+    -webkit-transform: translate(-20px, -75px);
+    transform: translate(-20px, -75px);
+}
+
+.fabc .option.open.delete {
+    -webkit-transform: translate(25px, -50px);
+    transform: translate(25px, -50px);
+}
+
+.fabc .option.open i {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    transition: 0.5s cubic-bezier(0.41, -2, 0.76, 2);
+}
+
+.fabc .close {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.fabc .close i {
+    color: #fff;
+    font-size: 20px;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+}
+
+.fabc .close.open i {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    transition: 0.5s cubic-bezier(0.41, -2, 0.76, 2);
+}
+
+.woba {
+    display: block;
+    position: absolute;
+    background: #fff;
+    border-radius: 100%;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    opacity: .5;
+}
+
+.woba.animate {
+    -webkit-animation: ripple .5s linear forwards;
+    animation: ripple .5s linear forwards;
+}
+
+@-webkit-keyframes ripple {
+    100% {
+        opacity: 0;
+        -webkit-transform: scale(2.5);
+        transform: scale(2.5);
+    }
+}
+
+@keyframes ripple {
+    100% {
+        opacity: 0;
+        -webkit-transform: scale(2.5);
+        transform: scale(2.5);
+    }
+}
