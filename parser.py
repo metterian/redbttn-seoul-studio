@@ -5,11 +5,11 @@ from bs4 import BeautifulSoup
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "redbttn_home.settings")
-# import django
-# django.setup()
+import django
+django.setup()
 
 # InstaDate import
-# from homepage.models import InstaData
+from homepage.models import InstaData
 
 def text_parser(content):
     blank = content.split(':')[1]
@@ -63,7 +63,7 @@ def html_parer(pageSource):
     return parser
 chrome_options = Options()
 
-chrome_options.add_argument("--headless")
+# chrome_options.add_argument("--headless")
 
 
 
