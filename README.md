@@ -43,13 +43,14 @@ python3 manage.py runserver
 
 
 ## Skill
-<img alt="python" src="https://img.shields.io/badge/Python- -black"/>
-<img alt="python-3.7.7" src="https://img.shields.io/badge/CSS-%20-blue"/>
-<img alt="" src="https://img.shields.io/badge/HTML-%20-orange"/>
-<img alt="javascript" src="https://img.shields.io/badge/JavaScript-%20-yellow"/>
-<img alt="hls" src="https://img.shields.io/badge/HLS-%20-red"/>
-<img alt="videojs" src="https://img.shields.io/badge/VideoJS-%20-yellowgreen"/>
-
+<p align="left">
+    <img alt="python" src="https://img.shields.io/badge/Python- -black"/>
+    <img alt="python-3.7.7" src="https://img.shields.io/badge/CSS-%20-blue"/>
+    <img alt="" src="https://img.shields.io/badge/HTML-%20-orange"/>
+    <img alt="javascript" src="https://img.shields.io/badge/JavaScript-%20-yellow"/>
+    <img alt="hls" src="https://img.shields.io/badge/HLS-%20-red"/>
+    <img alt="videojs" src="https://img.shields.io/badge/VideoJS-%20-yellowgreen"/>
+</p>
 
 
 ## Reference
