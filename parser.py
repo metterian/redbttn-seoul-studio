@@ -68,7 +68,7 @@ chrome_options = Options()
 
 
 driver = webdriver.Chrome(
-    executable_path= "/Users/seungjun/chromedriver/chromedriver",
+    executable_path= "~/chromedriver/chromedriver",
     options = chrome_options
 )
 driver.implicitly_wait(3)
