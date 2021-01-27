@@ -3,9 +3,7 @@
 
 
 ## Dependency
-<img alt="python-3.7.7" src="https://img.shields.io/badge/python-3.7.7-blue"/>
-<img alt="django-2.2.5" src="https://img.shields.io/badge/Django-2.2.5-brightgreen"/>
-<img alt="chromedriver-79.0.3945" src="https://img.shields.io/badge/chromedriver-79.0.3945-blueviolet"/>
+<img alt="python-3.7.7" src="https://img.shields.io/badge/python-3.7.7-blue"/> <img alt="django-2.2.5" src="https://img.shields.io/badge/Django-2.2.5-brightgreen"/> <img alt="chromedriver-79.0.3945" src="https://img.shields.io/badge/chromedriver-79.0.3945-blueviolet"/>
 
 
 
