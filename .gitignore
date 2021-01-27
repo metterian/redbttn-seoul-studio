@@ -218,3 +218,6 @@ dmypy.json
 *.code-workspace
 .vscode/
 vscode
+
+# Custom
+video/
