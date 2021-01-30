@@ -3,7 +3,7 @@ The website development of Red Button Studios in Sinsa-dong, Gangnam-gu, Korea.
 
 Instagram: [@redbttnseoul](https://www.instagram.com/redbttnseoul/)
 
-<img src="http://img.shields.io/badge/-Instagram-black?style=flat&logo=Instagram&link=https://www.instagram.com/redbttnseoul/&link=https://www.instagram.com/redbttnseoul/"/> [@redbttnseoul](https://www.instagram.com/redbttnseoul/)
+
 
 ## Project interests
 ### Front-end
