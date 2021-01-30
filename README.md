@@ -1,6 +1,7 @@
 # redbttn studio homepage
 강남구 신사동에 위치한 레드버트 스튜디오 홈페이지 제작
 
+Instagram: [@redbttnseoul](https://www.instagram.com/redbttnseoul/)
 
 ## Dependency
 <p align="left">
@@ -29,8 +30,8 @@ username = 'instagram_username'
 password = 'instagram_password'
 ```
 
-## Running the tests
-to make instagram database:
+## Runnig
+to make instagram database using crawling:
 ```
 python3 parser.py
 ```
@@ -39,7 +40,8 @@ to run server:
 python3 manage.py runserver
 ```
 
-
+## TODO
+[F-Lab](https://github.com/f-lab-edu/)
 
 
 ## Skill
@@ -50,6 +52,10 @@ python3 manage.py runserver
     <img alt="javascript" src="https://img.shields.io/badge/JavaScript-%20-yellow"/>
     <img alt="hls" src="https://img.shields.io/badge/HLS-%20-red"/>
     <img alt="videojs" src="https://img.shields.io/badge/VideoJS-%20-yellowgreen"/>
+    <img alt="sqlite3" src="https://img.shields.io/badge/sqlite3- -blue"/>
+    <img alt="selenuum" src="https://img.shields.io/badge/selenuum- -black"/>
+    <img alt="beautifulsoup4" src="https://img.shields.io/badge/beautifulsoup4- -green"/>
+    <img alt="AWS" src="https://img.shields.io/badge/AWS-%20-orange"/>
 </p>
 
 
@@ -65,11 +71,11 @@ python3 manage.py runserver
 
     https://github.com/aj-4/tinder-swipe-bot
 
-- Django 프로젝트 배포하기 - 1. AWS
+- Django  Project Deploy - 1. AWS
 
     https://nachwon.github.io/django-deploy-1-aws/
 
-- SalesMore :: Amazon AWS :: Cloudfront로 HLS 스트리밍 구성하기
+- SalesMore :: Amazon AWS :: Configuring HLS Streaming with Cloudfront
 
     https://salesmore.tistory.com/851
 
