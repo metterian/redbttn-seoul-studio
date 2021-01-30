@@ -1,7 +1,30 @@
 # redbttn studio homepage
-강남구 신사동에 위치한 레드버트 스튜디오 홈페이지 제작
+The website development of Red Button Studios in Sinsa-dong, Gangnam-gu, Korea.
 
 Instagram: [@redbttnseoul](https://www.instagram.com/redbttnseoul/)
+
+
+## Project interests
+### Front-end
+
+#### HLS Streaming
+- Need real-time video streaming technology to match the self-video studio concept
+- AWS CloudFront for simultaneous streaming to multiple connectors
+- Video JS
+#### Instagram Grid Style
+- Real-time synchronized Instagram feed layout
+#### Optimized for mobile(android & ios) and web
+- CSS for devices which has multiple resolutions
+- Video format with Android and iOS support
+
+### Back-end
+#### Crawling Bot
+- Develop a crawling bot for real-time Instagram feed synchronization
+- Modularize each function like a bot e.g. Log in, Crawling, Terminate
+#### Server
+- AWS EC2, Ubuntu 18.04
+- Crontab(crawling bot with real-time scheduling)
+
 
 ## Dependency
 <p align="left">
@@ -19,7 +42,7 @@ pip3 install -r requirement.txt
 ```
 
 to run parser.py:
-- download chromedriver, unzip, move to your ~/chromedriver (mac os / linux)
+- download chromedriver, unzip, move to  `HOME_PATH`/chromedriver (mac os / linux)
 
 
 create a secret.json file with variables:
@@ -40,8 +63,6 @@ to run server:
 python3 manage.py runserver
 ```
 
-## TODO
-[F-Lab](https://github.com/f-lab-edu/)
 
 
 ## Skill
