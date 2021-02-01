@@ -68,8 +68,8 @@ python3 manage.py runserver
 
 
 ## Video
-- [PC Version](https://youtu.be/w9NuSj_xY1o)
-- [Mobile Version](https://youtu.be/pgPuoi7n1Uc)
+- [PC Version](https://youtu.be/w9NuSj_xY1o){:target="_blank"}
+- [Mobile Version](https://youtu.be/pgPuoi7n1Uc){:target="_blank"}
 
 
 ## Skill
