@@ -101,3 +101,6 @@ python3 manage.py runserver
 
     https://salesmore.tistory.com/851
 
+- Building Video Streaming Services (AWS s3/cloudFront, HLS, video.js) | Dev. Nam Lab.
+
+    http://lab.naminsik.com/3960
