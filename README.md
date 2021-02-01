@@ -54,7 +54,7 @@ username = 'instagram_username'
 password = 'instagram_password'
 ```
 
-## Runnig
+## Run
 to make instagram database using crawling:
 ```
 python3 parser.py
