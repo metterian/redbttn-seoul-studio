@@ -27,6 +27,8 @@ Instagram: [@redbttnseoul](https://www.instagram.com/redbttnseoul/)
 - Crontab(crawling bot with real-time scheduling)
 
 
+
+
 ## Dependency
 <p align="left">
     <img alt="python-3.7.7" src="https://img.shields.io/badge/python-3.7.7-blue"/>
@@ -43,7 +45,7 @@ pip3 install -r requirement.txt
 ```
 
 to run parser.py:
-- download chromedriver, unzip, move to  `HOME_PATH`/chromedriver (mac os / linux)
+- download chromedriver, unzip, move to  `HOME_PATH/chromedriver` (mac os / linux)
 
 
 create a secret.json file with variables:
@@ -65,6 +67,10 @@ python3 manage.py runserver
 ```
 
 
+## Video
+- [PC Version](https://youtu.be/w9NuSj_xY1o)
+- [Mobile Version](https://youtu.be/pgPuoi7n1Uc)
+
 
 ## Skill
 <p align="left">
@@ -72,6 +78,7 @@ python3 manage.py runserver
     <img alt="python-3.7.7" src="https://img.shields.io/badge/CSS-%20-blue"/>
     <img alt="" src="https://img.shields.io/badge/HTML-%20-orange"/>
     <img alt="javascript" src="https://img.shields.io/badge/JavaScript-%20-yellow"/>
+    <img alt="JQuery" src="https://img.shields.io/badge/JQuery- -blue"/>
     <img alt="hls" src="https://img.shields.io/badge/HLS-%20-red"/>
     <img alt="videojs" src="https://img.shields.io/badge/VideoJS-%20-yellowgreen"/>
     <img alt="sqlite3" src="https://img.shields.io/badge/sqlite3- -blue"/>
@@ -80,6 +87,11 @@ python3 manage.py runserver
     <img alt="AWS" src="https://img.shields.io/badge/AWS-%20-orange"/>
 </p>
 
+
+## Notion
+https://www.notion.so/Back-end-fc842cd3273a4e10b82a9e7d550826ae
+
+The notes include concerns about technical issues and solutions to the development of the homepage.
 
 ## Reference
 - VideoJS
