@@ -68,8 +68,8 @@ python3 manage.py runserver
 
 
 ## Video
-- [PC Version](https://youtu.be/w9NuSj_xY1o){:target="_blank"}
-- [Mobile Version](https://youtu.be/pgPuoi7n1Uc){:target="_blank"}
+- [PC Version](https://youtu.be/w9NuSj_xY1o)
+- [Mobile Version](https://youtu.be/pgPuoi7n1Uc)
 
 
 ## Skill
@@ -88,31 +88,21 @@ python3 manage.py runserver
 </p>
 
 
-## Notion
-https://www.notion.so/Back-end-fc842cd3273a4e10b82a9e7d550826ae
+## Wiki
+📕[WIKI](https://www.notion.so/Back-end-fc842cd3273a4e10b82a9e7d550826ae)
 
-The notes include concerns about technical issues and solutions to the development of the homepage.
+The wiki include concerns about technical issues and solutions to the development of the homepage.
 
 ## Reference
-- VideoJS
+- [VideoJS](https://videojs.github.io/videojs-contrib-hls/)
 
-    https://videojs.github.io/videojs-contrib-hls/
+- [Web Scraping Instagram with Selenium](https://medium.com/analytics-vidhya/web-scraping-instagram-with-selenium-b6b1f27b885) | by Mariyasha | Analytics Vidhya | Medium
+- [Automate TINDER with Python tutorial](https://github.com/aj-4/tinder-swipe-bot) | AJ-4 | Youtube
 
--  Web Scraping Instagram with Selenium | by Mariyasha | Analytics Vidhya | Medium:
+- [Django  Project Deploy - 1. AWS](https://nachwon.github.io/django-deploy-1-aws/) | nachwon
 
-    https://medium.com/analytics-vidhya/web-scraping-instagram-with-selenium-b6b1f27b885
-- Automate TINDER with Python tutorial:
+- [Amazon AWS :: Configuring HLS Streaming with Cloudfront](https://salesmore.tistory.com/851) | SalesMore
 
-    https://github.com/aj-4/tinder-swipe-bot
+- [Building Video Streaming Services (AWS s3/cloudFront, HLS, video.js)](http://lab.naminsik.com/3960) | Dev. Nam Lab.
 
-- Django  Project Deploy - 1. AWS
-
-    https://nachwon.github.io/django-deploy-1-aws/
-
-- SalesMore :: Amazon AWS :: Configuring HLS Streaming with Cloudfront
-
-    https://salesmore.tistory.com/851
-
-- Building Video Streaming Services (AWS s3/cloudFront, HLS, video.js) | Dev. Nam Lab.
-
-    http://lab.naminsik.com/3960
+    
