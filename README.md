@@ -1,13 +1,10 @@
-# Red Bttn Studio              ![resized](./static/images/resized.png)
-
-
-
-```
 <a href="https://www.instagram.com/redbttnseoul/">
-    <img src="./static/images/resized.png" alt="Aimeos logo" title="redbttn" align="right" height="60" />
+    <img src="./static/images/resized.png" alt="redbttn logo" title="redbttn" align="right" height="45" />
 </a>
-```
 
+
+Red Bttn Studio
+======================
 > The website development of Red Button Studios in Sinsa-dong, Gangnam-gu, Korea. [Instagram](https://www.instagram.com/redbttnseoul/)
 
 <p align="left">
@@ -140,4 +137,4 @@ The wiki include concerns about technical issues and solutions to the developmen
 
 - [Building Video Streaming Services (AWS s3/cloudFront, HLS, video.js)](http://lab.naminsik.com/3960) | Dev. Nam Lab.
 
-    
+
