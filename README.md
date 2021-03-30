@@ -1,4 +1,4 @@
-### ![redbttn logo](./static/images/logo.png | height=35)
+![resized](/Users/seungjun/PycharmProjects/redbttn_studio_hompage/static/images/resized.png)
 
 ---
 
