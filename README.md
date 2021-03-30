@@ -1,4 +1,12 @@
-# ![resized](./static/images/resized.png)
+# Red Bttn Studio              ![resized](./static/images/resized.png)
+
+
+
+```
+<a href="https://www.instagram.com/redbttnseoul/">
+    <img src="./static/images/resized.png" alt="Aimeos logo" title="redbttn" align="right" height="60" />
+</a>
+```
 
 > The website development of Red Button Studios in Sinsa-dong, Gangnam-gu, Korea. [Instagram](https://www.instagram.com/redbttnseoul/)
 
