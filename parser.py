@@ -1,5 +1,5 @@
-import os
-import requests, django
+import os, requests, django
+import urllib.request
 from bs4 import BeautifulSoup
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
@@ -9,12 +9,13 @@ django.setup()
 from homepage.models import InstaData
 
 
-
 INSTA_URL = "http://www.instagram.com"
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+PHOTO_DIR = BASE_DIR + '/static/images/instagram/'
 
 
 """ Text Preprocessing """
-def textPreprocess(text):
+def textPreprocess(text) -> str:
     find_index = text[90:].find("요")
     find_mark = text[70:].find("!")
     if (find_mark != -1):
@@ -27,44 +28,51 @@ def textPreprocess(text):
         return text
 
 """ Beautifulsoup4 HTML Parser """
-def html_parser(pageSource):
+def html_parser(pageSource) -> object:
     parser = BeautifulSoup(pageSource, "html.parser")
     return parser
 
 """ Get Insta Article Preview URL """
-def parsingPreview(div):
+def parsePreview(div) -> str:
     preview = div.img['srcset'].split(',')[-1] # highest resolution img
     preview = preview.replace('640w', '')
     return preview
 
 """ Get Insta Content Text """
-def parsingContent(URL):
+def parseContent(URL) -> str:
     pageSource = bot.getPageSource(URL)
     soup = html_parser(pageSource)
     title = soup.title.string
     return textPreprocess(title)
 
 
-# Insta Bot Initiate
+# set crawling Insta bot
 bot = InstaBot()
 bot.login()
 
 
-# Parsing Start
+# parse img and text
 pageSource = bot.getPageSource()
 soup = html_parser(pageSource)
 article = soup.find("article")
 all_div = article.find_all('div',{'class':'v1Nh3'}) # Article div
 
 
-# Delete existing data to maintain up-to-date
+# delete existing data to maintain up-to-date
 InstaData.objects.all().delete()
 
 # Save data on InstaData which is django database
-for div in all_div[:9]:
+for i, div in enumerate(all_div[:9]):
     URL = INSTA_URL + div.a['href']
-    preview = parsingPreview(div)
-    content = parsingContent(URL)
+
+    # get img url
+    preview = parsePreview(div)
+    content = parseContent(URL)
+
+    # download preview photo
+    urllib.request.urlretrieve(preview, PHOTO_DIR+'insta_img'+str(i+1)+'.jpg')
+
+    # save Insta models
     InstaData(preview_photo=preview, link=URL, content=content).save()
 
 bot.close()
