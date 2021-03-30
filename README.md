@@ -1,17 +1,19 @@
-<a href="https://www.instagram.com/redbttnseoul/">
-    <img src="./static/images/resized.png" alt="redbttn logo" title="redbttn" align="right" height="45" />
-</a>
 
+<h1 align="center">
+  <br>
+  <a href="https://www.instagram.com/redbttnseoul/?hl=ko"><img src="./static/images/resized.png" alt="Redbttn Logo"></a>
+</h1>
 
-Red Bttn Studio
-======================
-> The website development of Red Button Studios in Sinsa-dong, Gangnam-gu, Korea. [Instagram](https://www.instagram.com/redbttnseoul/)
+<h4 align="center">The website development of Red Button Studio.</h4>
+<p align="center">Sinsa-dong, Gangnam-gu, Korea</p>
 
-<p align="left">
+<p align="center">
     <img alt="python-3.7.7" src="https://img.shields.io/badge/python-3.7.7-blue"/>
     <img alt="django-2.2.5" src="https://img.shields.io/badge/Django-2.2.5-brightgreen"/>
     <img alt="chromedriver-79.0.3945" src="https://img.shields.io/badge/chromedriver-79.0.3945-blueviolet"/>
 </p>
+
+---
 
 ## Demo
 
