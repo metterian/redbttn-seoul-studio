@@ -1,4 +1,4 @@
-### <img src="./static/images/logo.png" alt="logo" style="zoom: 40%;" />
+### ![redbttn logo](./static/images/logo.png | height=35)
 
 ---
 
