@@ -38,8 +38,6 @@ For fun especially mobile users, add sliding animations.
 
 ![](./static/github/sliding.gif)
 
-![](./static/github/dynamic_icon.gif)
-
 
 
 ## Project interests
