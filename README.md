@@ -1,4 +1,4 @@
-### <img src="./static/images/logo.png" alt="logo" style="zoom:67%;" />
+### <img src="./static/images/logo.png" alt="logo" style="zoom: 40%;" />
 
 ---
 
