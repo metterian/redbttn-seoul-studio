@@ -60,8 +60,7 @@ all_div = article.find_all('div',{'class':'v1Nh3'}) # Article div
 # Delete existing data to maintain up-to-date
 InstaData.objects.all().delete()
 
-
-previews, contents = [], []
+# Save data on InstaData which is django database
 for div in all_div[:9]:
     URL = INSTA_URL + div.a['href']
     preview = parsingPreview(div)
