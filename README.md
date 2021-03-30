@@ -1,14 +1,49 @@
-![resized](./static/images/resized.png)
+# ![resized](./static/images/resized.png)
 
----
+> The website development of Red Button Studios in Sinsa-dong, Gangnam-gu, Korea. [Instagram](https://www.instagram.com/redbttnseoul/)
 
-> The website development of Red Button Studios in Sinsa-dong, Gangnam-gu, Korea. 
->
-> Instagram: [@redbttnseoul](https://www.instagram.com/redbttnseoul/)
+<p align="left">
+    <img alt="python-3.7.7" src="https://img.shields.io/badge/python-3.7.7-blue"/>
+    <img alt="django-2.2.5" src="https://img.shields.io/badge/Django-2.2.5-brightgreen"/>
+    <img alt="chromedriver-79.0.3945" src="https://img.shields.io/badge/chromedriver-79.0.3945-blueviolet"/>
+</p>
+
+## Demo
+
+Here is a working live demo : http://dzzy6505.pythonanywhere.com
+
+## Site
+
+### Home Page
+
+High resolution video played with **HLS** streaming method. Use **Video-JS**" to support a variety of devices.
+
+![](./static/github/main_page.gif)
+
+### Floating Button
+
+**Floating Button** for mobile users.
+
+![](./static/github/floating_button.gif)
+
+### Instagram Feed Synchronization
+
+Instagram feed pictures is collected from running on the **AWS EC2** server in real time. Then, Save this to the database.
+
+![](./static/github/instagram_feed.gif)
+
+### Dynamic Animations
+
+For fun especially mobile users, add sliding animations.
+
+![](./static/github/sliding.gif)
+
+![](./static/github/dynamic_icon.gif)
 
 
 
 ## Project interests
+
 ### Front-end
 
 #### HLS Streaming
@@ -32,17 +67,8 @@
 
 
 
-## Dependency
-<p align="left">
-    <img alt="python-3.7.7" src="https://img.shields.io/badge/python-3.7.7-blue"/>
-    <img alt="django-2.2.5" src="https://img.shields.io/badge/Django-2.2.5-brightgreen"/>
-    <img alt="chromedriver-79.0.3945" src="https://img.shields.io/badge/chromedriver-79.0.3945-blueviolet"/>
-</p>
 
-
-
-
-## Installing
+## Install
 ```
 pip3 install -r requirement.txt
 ```
