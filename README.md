@@ -17,7 +17,7 @@
 
 ## Demo
 
-Here is a working live demo : http://dzzy6505.pythonanywhere.com
+Here is a working live demo : [Click](https://bit.ly/31xkAxS)
 
 ## Site
 
