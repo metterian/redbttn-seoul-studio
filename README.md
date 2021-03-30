@@ -1,4 +1,4 @@
-![resized](/Users/seungjun/PycharmProjects/redbttn_studio_hompage/static/images/resized.png)
+![resized](./static/images/resized.png)
 
 ---
 
