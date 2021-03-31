@@ -15,7 +15,7 @@
 </p>
 
 
-> Red Button Studio, located in Sinsa-dong, Gangnam-gu, Seoul, is a studio that provides self-video service. To enhance the studio's image, the website developed to maximize the Look & Feel.
+> Red Button Studio, located in Sinsa-dong, Gangnam-gu, Seoul, is a studio that provides self-video service. To enhance the studio's brand image, the website developed to maximize the Look & Feel.
 
 > The source code is open so that you can download the source code and set it up with ease if you would like to have your own exclusive environment.
 
