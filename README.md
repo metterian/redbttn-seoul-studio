@@ -11,9 +11,13 @@
     <img alt="python-3.7.7" src="https://img.shields.io/badge/python-3.7.7-blue"/>
     <img alt="django-2.2.5" src="https://img.shields.io/badge/Django-2.2.5-brightgreen"/>
     <img alt="chromedriver-79.0.3945" src="https://img.shields.io/badge/chromedriver-79.0.3945-blueviolet"/>
+    <img alt="GitHub" src="https://img.shields.io/github/license/metterian/redbttn-seoul-studio"/>
 </p>
 
----
+
+> Red Button Studio, located in Sinsa-dong, Gangnam-gu, Seoul, is a studio that provides self-video service. To enhance the studio's image, the website developed to maximize the Look & Feel.
+
+> The source code is open so that you can download the source code and set it up with ease if you would like to have your own exclusive environment.
 
 ## Demo
 
@@ -23,7 +27,7 @@ Here is a working live demo : [Click](https://bit.ly/31xkAxS)
 
 ### Home Page
 
-High resolution video played with **HLS** streaming method. Use **Video-JS**" to support a variety of devices.
+High resolution video played with **HLS** streaming method. Use **Video-JS** to support a variety of devices.
 
 ![](./static/github/main_page.gif)
 
@@ -73,10 +77,28 @@ For fun especially mobile users, add sliding animations.
 
 
 
-## Install
-```
-pip3 install -r requirement.txt
-```
+## Folder Structure
+    .
+    ├── .idea
+    ├── homepage                # Main page app
+    ├── redbttn_home            # Django project settings
+    ├── static                  # Static folder
+    ├── templates               # HTML template folder
+    ├── insta_login.py          # Selenium module code
+    ├── parser.py               # Instagram crawling code
+    ├── manage.py
+    ├── requirements.txt
+    ├── LICENSE
+    └── README.md
+
+
+
+## Dependencies
+<img alt="python-3.7.7" src="https://img.shields.io/badge/python-3.7.7-blue"/>
+<img alt="django-2.2.5" src="https://img.shields.io/badge/Django-2.2.5-brightgreen"/>
+<img alt="chromedriver-79.0.3945" src="https://img.shields.io/badge/chromedriver-79.0.3945-blueviolet"/>
+
+
 
 to run parser.py:
 - download chromedriver, unzip, move to  `HOME_PATH/chromedriver` (mac os / linux)
@@ -139,4 +161,5 @@ The wiki include concerns about technical issues and solutions to the developmen
 
 - [Building Video Streaming Services (AWS s3/cloudFront, HLS, video.js)](http://lab.naminsik.com/3960) | Dev. Nam Lab.
 
-
+## License
+The MIT License
