@@ -3,7 +3,7 @@ import urllib.request
 from bs4 import BeautifulSoup
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
-from insta_login import InstaBot
+from crawler import InstaBot
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "redbttn_home.settings")
 django.setup()
 from homepage.models import InstaData
@@ -49,7 +49,7 @@ def parseContent(crawler: object, URL:str) -> str:
 
 def main():
     # set crawling Insta bot
-    bot = InstaBot()
+    bot = InstaBot(headless=True)
     bot.login()
 
 
