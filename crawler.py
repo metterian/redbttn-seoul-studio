@@ -46,33 +46,39 @@ def parseContent(URL) -> str:
     return textPreprocess(title)
 
 
-# set crawling Insta bot
-bot = InstaBot()
-bot.login()
+
+def main():
+    # set crawling Insta bot
+    bot = InstaBot()
+    bot.login()
 
 
-# parse img and text
-pageSource = bot.getPageSource()
-soup = html_parser(pageSource)
-article = soup.find("article")
-all_div = article.find_all('div',{'class':'v1Nh3'}) # Article div
+    # parse img and text
+    pageSource = bot.getPageSource()
+    soup = html_parser(pageSource)
+    article = soup.find("article")
+    all_div = article.find_all('div',{'class':'v1Nh3'}) # Article div
 
 
-# delete existing data to maintain up-to-date
-InstaData.objects.all().delete()
+    # delete existing data to maintain up-to-date
+    InstaData.objects.all().delete()
 
-# Save data on InstaData which is django database
-for i, div in enumerate(all_div[:9]):
-    URL = INSTA_URL + div.a['href']
+    # Save data on InstaData which is django database
+    for i, div in enumerate(all_div[:9]):
+        URL = INSTA_URL + div.a['href']
 
-    # get img url
-    preview = parsePreview(div)
-    content = parseContent(URL)
+        # get img url
+        preview = parsePreview(div)
+        content = parseContent(URL)
 
-    # download preview photo
-    urllib.request.urlretrieve(preview, PHOTO_DIR+'insta_img'+str(i+1)+'.jpg')
+        # download preview photo
+        urllib.request.urlretrieve(preview, PHOTO_DIR+'insta_img'+str(i+1)+'.jpg')
 
-    # save Insta models
-    InstaData(preview_photo=preview, link=URL, content=content).save()
+        # save Insta models
+        InstaData(preview_photo=preview, link=URL, content=content).save()
 
-bot.close()
+    bot.close()
+
+
+if __name__ == "__main__":
+    main()
