@@ -39,8 +39,8 @@ def parsePreview(div) -> str:
     return preview
 
 """ Get Insta Content Text """
-def parseContent(URL) -> str:
-    pageSource = bot.getPageSource(URL)
+def parseContent(crawler: object, URL:str) -> str:
+    pageSource = crawler.getPageSource(URL)
     soup = html_parser(pageSource)
     title = soup.title.string
     return textPreprocess(title)
@@ -69,7 +69,7 @@ def main():
 
         # get img url
         preview = parsePreview(div)
-        content = parseContent(URL)
+        content = parseContent(bot, URL)
 
         # download preview photo
         urllib.request.urlretrieve(preview, PHOTO_DIR+'insta_img'+str(i+1)+'.jpg')
